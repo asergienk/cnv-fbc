@@ -353,14 +353,14 @@ spec:
       runAfter:
       - validate-fbc
       taskRef:
+        resolver: git
         params:
-        - name: name
-          value: fbc-target-index-pruning-check
-        - name: bundle
-          value: quay.io/asergien/test@sha256:eaaee9310ab29e3885979c603c42b87890e471167bd48a6822393217fc8a2f4d
-        - name: kind
-          value: task
-        resolver: bundles
+          - name: url
+            value: https://github.com/asergienk/build-definitions.git
+          - name: revision
+            value: save_pruned_channels
+          - name: pathInRepo
+            value: tasks/fbc-target-index-pruning-check/0.1/fbc-target-index-pruning-check.yaml
       when:
       - input: $(params.skip-checks)
         operator: in
