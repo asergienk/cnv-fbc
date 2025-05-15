@@ -350,13 +350,13 @@ spec:
       - validate-fbc
       taskRef:
         params:
-        - name: name
-          value: fbc-target-index-pruning-check
-        - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-fbc-target-index-pruning-check:0.1@sha256:a4d0bedb2aeed06d060b5a38f3dc020625e1c11665fc1a0317765c1f90edb485
-        - name: kind
-          value: task
-        resolver: bundles
+        - name: pathInRepo
+          value: task/fbc-target-index-pruning-check/0.1/fbc-target-index-pruning-check.yaml
+        - name: url
+          value: https://github.com/asergienk/build-definitions.git
+        - name: revision
+          value: save_pruned_channels
+        resolver: git
       when:
       - input: $(params.skip-checks)
         operator: in
