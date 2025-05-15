@@ -357,7 +357,7 @@ spec:
         - name: name
           value: fbc-target-index-pruning-check
         - name: bundle
-          value: quay.io/asergien/test@sha256:b8a59262a8d394eaf4c62d8119b33c3a7e4398e47090a52e2c1873cdabc87612
+          value: quay.io/asergien/test@sha256:eaaee9310ab29e3885979c603c42b87890e471167bd48a6822393217fc8a2f4d
         - name: kind
           value: task
         resolver: bundles
