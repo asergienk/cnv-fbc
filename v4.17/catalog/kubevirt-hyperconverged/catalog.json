@@ -35,12 +35,6 @@
 }
 {
     "schema": "olm.channel",
-    "name": "dev-preview",
-    "package": "kubevirt-hyperconverged",
-    "entries": []
-}
-{
-    "schema": "olm.channel",
     "name": "stable",
     "package": "kubevirt-hyperconverged",
     "entries": [
