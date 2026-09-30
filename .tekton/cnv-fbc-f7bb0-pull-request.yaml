@@ -198,7 +198,7 @@ spec:
       taskRef:
         params:
         - name: url
-          value: https://github.com/asergienk/cnv-fbc.git
+          value: https://github.com/asergienk/konflux-operator-tasks.git
         - name: revision
           value: add_allow_list
         - name: pathInRepo
