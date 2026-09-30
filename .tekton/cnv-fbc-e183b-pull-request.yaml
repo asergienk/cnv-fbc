@@ -200,7 +200,7 @@ spec:
         - name: url
           value: https://github.com/redhat-chai-bot/konflux-ci_konflux-operator-tasks.git
         - name: revision
-          value: skip-packages-lifecycle
+          value: feat/skip-packages-lifecycle
         - name: pathInRepo
           value: task/fbc-inject-lifecycle-oci-ta/0.1/fbc-inject-lifecycle-oci-ta.yaml
         resolver: git
